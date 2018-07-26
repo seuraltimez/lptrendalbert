@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lptrend</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/material.css">
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body class="mdc-typography">
+	<div id="mobmenu" class="mdc-drawer mdc-drawer--temporary">
+		<nav class="temporary-drawer__drawer mdc-drawer__drawer mdc-drawer__content">
+			<header class="temporary-drawer__header mdc-drawer__header">
+				<div class="temporary-drawer__header-content mdc-drawer__header-content">
+					<div>
+						<div class="temporary-drawer__header-icon"></div>
+						<div class="mobinfo">
+							<span>Иван Иванов</span><br>
+							<span>ivanov@gmail.com</span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<nav class="mdc-list">
+				<a class="mdc-list-item mdc-typography--body2" href="#">
+					<i class="material-icons mdc-list-item__graphic">dashboard</i>Шаблоны</a>
+				<a class="mdc-list-item mdc-typography--body2" href="#">
+					<i class="material-icons mdc-list-item__graphic">view_module</i>Мои сайты</a>	  
+				<a class="mdc-list-item mdc-typography--body2" href="#">
+					<i class="material-icons mdc-list-item__graphic">settings</i>Настройки</a>
+				<a class="mdc-list-item mdc-typography--body2" href="#">
+					<i class="material-icons mdc-list-item__graphic">account_balance_wallet</i>Платежи</a>
+			</nav>
+		</nav>
+	</div>
+	<header class="mdc-toolbar header">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start mdc-toolbar__section--shrink-to-fit">
+				<button id="menu-open" class="menu-btn material-icons mdc-toolbar__menu-icon">menu</button>
+				<div id="m-logo" class="logo">
+					<a href="#"><img src="images/Logo.svg"/></a>
+				</div>
+			</section>
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+				<div class="avatar-icon">
+				</div>
+			</section>
+		</div>
+	</header>
+		<section id="main-nav">
+			<nav id="main-nav-tab-bar" class="mdc-tab-bar">
+				<a class="mdc-tab " href="#">Шаблоны</a>
+				<a class="mdc-tab mdc-tab--active" href="#">Мои сайты</a>
+				<a class="mdc-tab" href="#">Настройки</a>
+				<a class="mdc-tab" href="#">Платежи</a>
+				<span class="mdc-tab-bar__indicator"></span>
+			</nav>
+		</section>
+		<section class="main-section">
+			<div class="mdc-layout-grid container mdc-layout-grid--fixed-column-width">
+				<h4 class="mdc-typography--headline4">Мои сайты</h4>
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-card empty-card mdc-layout-grid__cell--span-3-desktop">
+						<div class="m-c-inner">
+							<i class="my-icon mdc-icon-toggle material-icons">add</i>
+						<h6 class="mdc-typography--headline6">Новый сайт</h6>		
+					</div>
+				</div>
+				<div class="mdc-card filled-card mdc-card__primary-action mdc-layout-grid__cell--span-3-desktop">
+					<div class="mdc-card__media">
+						<div class="mdc-card__media-content">
+							<i class="edit-icon mdc-card__action--icon material-icons">edit</i>				
+						</div>
+					</div>
+					<div class="site-card-content">		
+						<span class="date">25.02.18</span>
+						<h6 class="mdc-typography--headline6">Название сайта</h6>
+					</div>
+					<div class="mdc-card__actions">
+						<div class="mdc-card__action-buttons">
+							<button class="mdc-button mdc-card__action mdc-card__action--button">Опубликовать</button>
+						</div>
+						<div class="mdc-card__action-icons">
+							<i class="mdc-icon-toggle icon-delete material-icons mdc-card__action mdc-card__action--icon mdc-icon-button" title="Delete">delete</i>				
+						</div>
+					</div>
+				</div>
+				<div class="mdc-card filled-card mdc-card__primary-action mdc-layout-grid__cell--span-3-desktop">
+					<div class="mdc-card__media">
+						<div class="mdc-card__media-content">
+							<i class="edit-icon mdc-card__action--icon material-icons">edit</i>				
+						</div>
+					</div>
+					<div class="site-card-content">		
+						<span class="date">25.02.18</span>
+						<h6 class="mdc-typography--headline6">Название сайта</h6>
+					</div>
+					<div class="mdc-card__actions">
+						<div class="mdc-card__action-buttons">
+							<button class="mdc-button mdc-card__action mdc-card__action--button">Опубликовать</button>
+						</div>
+						<div class="mdc-card__action-icons">
+							<i class="mdc-icon-toggle icon-delete material-icons mdc-card__action mdc-card__action--icon mdc-icon-button" title="Delete">delete</i>				
+						</div>
+					</div>
+				</div>
+				<div class="mdc-card filled-card mdc-card__primary-action mdc-layout-grid__cell--span-3-desktop">
+					<div class="mdc-card__media">
+						<div class="mdc-card__media-content">
+							<i class="edit-icon mdc-card__action--icon material-icons">edit</i>				
+						</div>
+					</div>
+					<div class="site-card-content">		
+						<span class="date">25.02.18</span>
+						<h6 class="mdc-typography--headline6">Название сайта</h6>
+					</div>
+					<div class="mdc-card__actions">
+						<div class="mdc-card__action-buttons">
+							<button class="mdc-button mdc-card__action mdc-card__action--button">Опубликовать</button>
+						</div>
+						<div class="mdc-card__action-icons">
+							<i class="mdc-icon-toggle icon-delete material-icons mdc-card__action mdc-card__action--icon mdc-icon-button" title="Delete">delete</i>				
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/material.min.js"></script>
+		<script type="text/javascript" src="js/material.js"></script>
+		
+		</body>
+		<footer class="footer">
+			<div class="mdc-layout-grid">
+				<nav id="basic-tab-bar" class="my-tabs">
+					<a class="footer-link mdc-tab--active" href="#one">Тарифы</a>
+					<a class="footer-link" href="#">Блог</a>
+					<a class="footer-link" href="#">Партнерская программа</a>
+					<a class="footer-link" href="#">Политика конфиденциальности</a>
+					<a class="footer-link" href="#">Поддержка</a>
+					<a class="footer-link" href="#">Пользовательское соглашение</a>
+					<span class="mdc-tab-bar__indicator"></span>
+				</nav>
+				<div class="social mdc-layout-grid">
+					<a href="#" class="soc-a"><img src="images/VK.svg"/></a>
+					<a href="#" class="soc-a"><img src="images/FB.svg"/></a>
+					<a href="#" class="soc-a"><img src="images/OK.svg"/></a>
+					<a href="#" class="soc-a"><img src="images/tW.svg"/></a>
+					<a href="#" class="soc-a"><img src="images/G+.svg"/></a>
+				</div>
+				<button class="mdc-fab footer-bt" aria-label="add">
+					<span class="mdc-fab__icon material-icons">add</span>
+				</button>		
+			</div>
+		</footer>
+		</html>
